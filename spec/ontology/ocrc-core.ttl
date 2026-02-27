@@ -1,0 +1,32 @@
+@prefix ocrc: <https://ocrc.org/ns/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ocrc: a owl:Ontology ;
+    rdfs:comment "OCRC Core Ontology v1.0" .
+
+ocrc:ResearchObject a owl:Class ;
+    rdfs:label "Research Object" .
+
+ocrc:AstronomicalObject a owl:Class ;
+    rdfs:subClassOf ocrc:ResearchObject .
+
+ocrc:Event a owl:Class ;
+    rdfs:subClassOf ocrc:ResearchObject .
+
+ocrc:Hypothesis a owl:Class ;
+    rdfs:subClassOf ocrc:ResearchObject .
+
+ocrc:Method a owl:Class ;
+    rdfs:subClassOf ocrc:ResearchObject .
+
+ocrc:Agent a owl:Class ;
+    rdfs:label "Agent" .
+
+ocrc:identifier a owl:DatatypeProperty ;
+    rdfs:domain ocrc:ResearchObject ;
+    rdfs:range xsd:string .
+
+ocrc:proposedBy a owl:ObjectProperty ;
+    rdfs:domain ocrc:Hypothesis ;
+    rdfs:range ocrc:Agent .
