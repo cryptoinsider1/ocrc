@@ -1,0 +1,14 @@
+{
+  search(type: "FRBEvent", limit: 5) {
+    roi
+    name
+    ... on FRBEvent {
+      dm
+      snr
+      source {
+        name
+        periodicity
+      }
+    }
+  }
+}
