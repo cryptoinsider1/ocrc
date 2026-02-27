@@ -1,0 +1,26 @@
+{
+  "@context": ["https://w3id.org/ro/crate/1.1/context", "https://ocrc.org/context/v1"],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {"@id": "./"}
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Orbital Hypothesis for FRB 180916",
+      "description": "Hypothesis that 16-day periodicity is due to orbital motion",
+      "identifier": "roi:frb/hypothesis/ocrc/20260301/j0k1l2m",
+      "datePublished": "2026-03-01",
+      "author": {"@id": "https://orcid.org/0000-0002-1825-0097"}
+    },
+    {
+      "@id": "hypothesis.hdf.json",
+      "@type": "File",
+      "name": "hypothesis.hdf.json",
+      "encodingFormat": "application/json",
+      "contentSize": 5120
+    }
+  ]
+}
