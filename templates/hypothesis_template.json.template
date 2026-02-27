@@ -1,0 +1,41 @@
+{
+  "hdf_version": "1.0",
+  "hypothesis": {
+    "id": "{{ROI_HYPOTHESIS}}",
+    "title": "{{HYPOTHESIS_TITLE}}",
+    "description": "{{HYPOTHESIS_DESCRIPTION}}",
+    "statement": "{{FORMAL_OR_NATURAL_LANGUAGE_STATEMENT}}",
+    "assumptions": [
+      "{{ASSUMPTION_1}}",
+      "{{ASSUMPTION_2}}"
+    ],
+    "predictions": [
+      {
+        "id": "pred_1",
+        "description": "{{PREDICTION_DESCRIPTION}}",
+        "testable": true,
+        "requires": {
+          "observations": ["{{TYPE_OF_OBSERVATION}}"],
+          "methods": ["{{METHOD_ROI_OR_NAME}}"]
+        }
+      }
+    ],
+    "falsification_conditions": "{{CONDITIONS_UNDER_WHICH_HYPOTHESIS_IS_FALSE}}",
+    "related_hypotheses": [
+      {
+        "relation": "supports",
+        "target": "{{ROI_OTHER_HYPOTHESIS}}"
+      }
+    ],
+    "proposed_by": [
+      {
+        "@id": "{{AUTHOR_ROI}}",
+        "name": "{{AUTHOR_NAME}}"
+      }
+    ],
+    "references": [
+      "{{PUBLICATION_DOI}}"
+    ],
+    "date_proposed": "{{DATE}}"
+  }
+}
