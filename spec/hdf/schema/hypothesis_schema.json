@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ocrc.org/schemas/hdf/v1.json",
+  "title": "Hypothesis Description Framework",
+  "type": "object",
+  "required": ["hdf_version", "hypothesis"],
+  "properties": {
+    "hdf_version": {"type": "string", "pattern": "^\\d+\\.\\d+$"},
+    "hypothesis": {
+      "type": "object",
+      "required": ["id", "title", "description", "statement"],
+      "properties": {
+        "id": {"type": "string"},
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "statement": {"type": "string"},
+        "assumptions": {"type": "array", "items": {"type": "string"}},
+        "predictions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "description"],
+            "properties": {
+              "id": {"type": "string"},
+              "description": {"type": "string"},
+              "testable": {"type": "boolean"},
+              "requires": {
+                "type": "object",
+                "properties": {
+                  "observations": {"type": "array", "items": {"type": "string"}},
+                  "methods": {"type": "array", "items": {"type": "string"}}
+                }
+              }
+            }
+          }
+        },
+        "falsification_conditions": {"type": "string"},
+        "related_hypotheses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["relation", "target"],
+            "properties": {
+              "relation": {"type": "string", "enum": ["supports", "contradicts", "generalizes", "specifies"]},
+              "target": {"type": "string"}
+            }
+          }
+        },
+        "proposed_by": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["@id", "name"],
+            "properties": {
+              "@id": {"type": "string"},
+              "name": {"type": "string"}
+            }
+          }
+        },
+        "references": {"type": "array", "items": {"type": "string"}},
+        "date_proposed": {"type": "string", "format": "date"}
+      }
+    }
+  }
+}
