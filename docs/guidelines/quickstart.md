@@ -6,4 +6,4 @@
 4. **Describe your hypothesis** (optional): Use HDF templates from `templates/hypothesis_template.json.template`.
 5. **Share**: Upload your RO-Crate to a public repository (Zenodo, GitHub) and announce it on our community forum.
 
-For detailed examples, see the [examples/](../../examples/) directory.
+For detailed examples, see the [examples/](../../examples/) directory.  
