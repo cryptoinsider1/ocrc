@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "ocrc": "https://ocrc.org/ns/v1#",
+    "ResearchObject": "ocrc:ResearchObject",
+    "FRBEvent": "ocrc:FRBEvent",
+    "FRBSource": "ocrc:FRBSource",
+    "Hypothesis": "ocrc:Hypothesis",
+    "identifier": "ocrc:identifier",
+    "version": "ocrc:version"
+  }
+}
