@@ -1,0 +1,9 @@
+@prefix ocrc: <https://ocrc.org/ns/v1#> .
+@prefix ex: <http://example.org/> .
+
+ex:FRB180916 a ocrc:AstronomicalObject ;
+    ocrc:identifier "roi:frb/source/chime/20180916/1a2b3c" .
+
+ex:Event20200101 a ocrc:Event ;
+    ocrc:identifier "roi:frb/event/chime/20200101/7g8h9i" ;
+    ocrc:source ex:FRB180916 .
