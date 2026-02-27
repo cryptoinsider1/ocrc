@@ -1,0 +1,19 @@
+{
+  "@context": ["https://w3id.org/ro/crate/1.1/context", "https://ocrc.org/context/v1"],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {"@id": "./"}
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "FRB 180916.J0158+65",
+      "description": "Repeating FRB source with 16‑day periodicity",
+      "identifier": "roi:frb/source/chime/20180916/1a2b3c",
+      "datePublished": "2020-02-15",
+      "author": {"@id": "https://orcid.org/0000-0002-1825-0097"}
+    }
+  ]
+}
