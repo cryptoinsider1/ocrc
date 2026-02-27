@@ -1,0 +1,20 @@
+
+  "source": {
+    "source_id": "{{SOURCE_ID}}",
+    "aliases": ["{{ALIAS1}}"],
+    "ra": {{RA_DEG}},
+    "dec": {{DEC_DEG}},
+    "redshift": {{REDSHIFT}},
+    "dm": {{DM}},
+    "dm_host": {{DM_HOST}},
+    "host_galaxy": "{{HOST_NAME}}",
+    "source_type": "{{SOURCE_TYPE}}",
+    "periodicity": {{PERIOD_DAYS}},
+    "periodicity_error": {{PERIOD_ERROR}},
+    "active_phase_duration": {{ACTIVE_DAYS}},
+    "inactive_phase_duration": {{INACTIVE_DAYS}},
+    "discovery_telescope": "{{DISCOVERY_TELESCOPE}}",
+    "discovery_date": "{{DISCOVERY_DATE}}",
+    "references": ["{{DOI}}"]
+  }
+}
