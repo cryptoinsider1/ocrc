@@ -1,0 +1,47 @@
+{
+  "hdf_version": "1.0",
+  "hypothesis": {
+    "id": "roi:frb/hypothesis/ocrc/20260301/j0k1l2m",
+    "title": "Orbital modulation hypothesis for FRB 180916",
+    "description": "The 16‑day periodicity of FRB 180916 is caused by orbital motion in a binary system.",
+    "statement": "A neutron star with a companion (star or compact object) produces FRBs; the signal is modulated as the companion periodically obscures or interacts with the emission region.",
+    "assumptions": [
+      "The FRB source is a neutron star.",
+      "The system is bound by gravity."
+    ],
+    "predictions": [
+      {
+        "id": "pred1",
+        "description": "Polarization angle should vary with orbital phase.",
+        "testable": true,
+        "requires": {
+          "observations": ["polarimetry"],
+          "methods": ["roi:frb/method/polarimetry/v1.0/n3o4p5q"]
+        }
+      },
+      {
+        "id": "pred2",
+        "description": "If the companion is a star, periodic absorption features may appear in the spectrum.",
+        "testable": true,
+        "requires": {
+          "observations": ["spectroscopy"]
+        }
+      }
+    ],
+    "falsification_conditions": "No correlation of polarization with phase after 10 cycles, or detection of a different mechanism (e.g., precession) that better explains the data.",
+    "related_hypotheses": [
+      {
+        "relation": "contradicts",
+        "target": "roi:frb/hypothesis/ocrc/20260201/a1b2c3"
+      }
+    ],
+    "proposed_by": [
+      {
+        "@id": "https://orcid.org/0000-0002-1825-0097",
+        "name": "Jane Doe"
+      }
+    ],
+    "references": ["2020Natur.582..351C"],
+    "date_proposed": "2026-03-01"
+  }
+}
