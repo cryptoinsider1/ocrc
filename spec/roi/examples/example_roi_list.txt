@@ -1,0 +1,7 @@
+# Example ROIs for FRB research
+
+roi:frb/source/chime/20180916/1a2b3c     # FRB 180916.J0158+65
+roi:frb/source/arecibo/20121102/4d5e6f   # FRB 20121102A
+roi:frb/event/chime/20200101/7g8h9i      # Single event from FRB 180916
+roi:frb/hypothesis/ocrc/20260301/j0k1l2m # 16‑day cycle orbital hypothesis
+roi:frb/method/polarimetry/v1.0/n3o4p5q  # Polarimetry analysis pipeline
