@@ -1,0 +1,58 @@
+type Query {
+  # Find a research object by its ROI
+  object(roi: ID!): ResearchObject
+
+  # Search for objects by type and filters
+  search(
+    type: String,
+    author: String,
+    after: DateTime,
+    limit: Int = 10
+  ): [ResearchObject!]!
+}
+
+interface ResearchObject {
+  roi: ID!
+  type: String!
+  name: String
+  description: String
+  authors: [Agent!]!
+  datePublished: DateTime
+  references: [String!]
+}
+
+type FRBEvent implements ResearchObject {
+  roi: ID!
+  type: String!
+  name: String
+  description: String
+  authors: [Agent!]!
+  datePublished: DateTime
+  references: [String!]
+  # FRB‑specific fields
+  dm: Float
+  snr: Float
+  width: Float
+  source: FRBSource
+}
+
+type FRBSource implements ResearchObject {
+  roi: ID!
+  type: String!
+  name: String
+  description: String
+  authors: [Agent!]!
+  datePublished: DateTime
+  references: [String!]
+  ra: Float
+  dec: Float
+  periodicity: Float
+}
+
+type Agent {
+  orcid: String
+  name: String!
+  affiliation: String
+}
+
+scalar DateTime
