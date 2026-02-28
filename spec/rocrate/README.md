@@ -4,6 +4,6 @@ RO-Crate is a lightweight packaging format for research data. This directory def
 
 - [specification.md](specification.md) – detailed rules.
 - [ocrc-profile.jsonld](ocrc-profile.jsonld) – JSON‑LD context for OCRC.
-- [examples/](examples/) – complete example crates.
+- [examples](examples/) – complete example crates.
 
 All OCRC data MUST be packaged as RO-Crate and MUST include at least one ROI in the metadata.
