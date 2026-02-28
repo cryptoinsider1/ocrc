@@ -1,0 +1,32 @@
+{
+  "@context": ["https://w3id.org/ro/crate/1.1/context", "https://ocrc.org/context/v1"],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {"@id": "./"},
+      "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"}
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "FRB Event 20200101 from FRB 180916.J0158+65",
+      "description": "A single burst recorded by CHIME on 2020-01-01",
+      "identifier": "roi:frb/event/chime/20200101/7g8h9i",
+      "datePublished": "2020-01-01",
+      "author": {
+        "@id": "https://orcid.org/0000-0002-1825-0097",
+        "@type": "Person",
+        "name": "Jane Doe"
+      }
+    },
+    {
+      "@id": "data/event_data.fits",
+      "@type": "File",
+      "name": "event_data.fits",
+      "encodingFormat": "application/fits",
+      "contentSize": 204800,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
