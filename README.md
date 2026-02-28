@@ -1,4 +1,4 @@
-# Open Cooperative Research Protocol (OCRC)
+# Open Cooperative Research Protocol - OCRC
 
 **Voluntary framework standard for open, interdisciplinary and environmental science.**
 
