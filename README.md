@@ -26,9 +26,9 @@ This repository contains specifications, templates and tools for using the OCRC 
 
 1. Read the [manifesto](docs/manifesto.pdf).
 
-2. Select the section you are interested in in `spec/`.
+2. Select the section you are interested in in [spec](spec).
 
-3. Use templates from `templates/` to create your own objects.
+3. Use templates from [templates](templates) to create your own objects.
 
 4. Share results via RO-Crate and specify ROI.
 
